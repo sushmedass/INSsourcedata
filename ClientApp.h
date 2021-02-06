@@ -10,6 +10,7 @@ class ClientApp: public QMainWindow
     Q_OBJECT
 public:
     ClientApp(QWidget *parent=0);
+
 private slots:
     void stateUpdate(const stateVector &info);
 private:

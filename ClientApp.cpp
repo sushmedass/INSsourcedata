@@ -14,7 +14,7 @@ ClientApp::ClientApp(QWidget *parent):QMainWindow(parent)
 
     SdInsCsvSource *csv_app=new SdInsCsvSource(this);
      csv_app->startUpdates();
-    connect(csv_app, SIGNAL(stateUpdate(stateVector)), this, SLOT(stateUpdate(stateVector)));
+//    connect(csv_app, SIGNAL(stateUpdate(stateVector)), this, SLOT(stateUpdate(stateVector)));
     connect(csv_app, &SdInsCsvSource::stateUpdate, this, &ClientApp::stateUpdate);
 
 

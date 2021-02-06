@@ -27,13 +27,12 @@ public:
     explicit InsSourceData(QObject *parent);
 //    virtual ~InsSourceData();
 
+    virtual int minimumUpdateInterval() const = 0;
     virtual void setUpdateInterval(int msec);
     int updateInterval() const
     {
         return m_updateInterval;
     }
-
-    virtual int minimumUpdateInterval() const = 0;
 
 public Q_SLOTS:
     virtual void startUpdates() = 0;
@@ -42,7 +41,7 @@ public Q_SLOTS:
 //    virtual void requestUpdate(int timeout = 0) = 0;
 
 Q_SIGNALS:
-    void stateUpdate(const stateVector &info);
+    void stateUpdate(const stateVector &update);
 //    void updateTimeout();
 
 protected:

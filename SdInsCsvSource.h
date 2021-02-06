@@ -22,7 +22,7 @@ public slots:
 //    virtual void requestUpdate(int timeout = 5000);
 
 Q_SIGNALS:
-    void stateUpdate(const stateVector &info);
+    void stateUpdate(const stateVector &update);
 
 private:
     QTimer *timer;

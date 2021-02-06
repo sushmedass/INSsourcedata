@@ -5,7 +5,7 @@
 #include<QtCore>
 #include<QString>
 #include<QByteArray>
-#include<QString>
+#include<QStringList>
 #include<QTimer>
 
 SdInsCsvSource::SdInsCsvSource(QObject *parent):InsSourceData(parent)
@@ -17,7 +17,7 @@ SdInsCsvSource::SdInsCsvSource(QObject *parent):InsSourceData(parent)
     timer=new QTimer();
     count=0;
 
-     connect(timer, &QTimer::timeout, this, &SdInsCsvSource::readCSVfile);
+    connect(timer, &QTimer::timeout, this, &SdInsCsvSource::readCSVfile);
 
     QTextStream stream(csv_file);
     QString line;
@@ -26,7 +26,7 @@ SdInsCsvSource::SdInsCsvSource(QObject *parent):InsSourceData(parent)
     do{
         line=stream.readLine();
         QStringList sl=line.split(',');
-        CSV_statevector.time=sl.at(0).toInt();
+        CSV_statevector.time=sl.at(0).toFloat();
         CSV_statevector.latitude=sl.at(1).toDouble();
         CSV_statevector.longitude=sl.at(2).toDouble();
         CSV_statevector.altitude=sl.at(3).toDouble();

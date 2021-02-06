@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SdInsCsvSource_t {
     QByteArrayData data[8];
-    char stringdata0[82];
+    char stringdata0[84];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,14 +36,15 @@ QT_MOC_LITERAL(0, 0, 14), // "SdInsCsvSource"
 QT_MOC_LITERAL(1, 15, 11), // "stateUpdate"
 QT_MOC_LITERAL(2, 27, 0), // ""
 QT_MOC_LITERAL(3, 28, 11), // "stateVector"
-QT_MOC_LITERAL(4, 40, 4), // "info"
-QT_MOC_LITERAL(5, 45, 12), // "startUpdates"
-QT_MOC_LITERAL(6, 58, 11), // "stopUpdates"
-QT_MOC_LITERAL(7, 70, 11) // "readCSVfile"
+QT_MOC_LITERAL(4, 40, 6), // "update"
+QT_MOC_LITERAL(5, 47, 12), // "startUpdates"
+QT_MOC_LITERAL(6, 60, 11), // "stopUpdates"
+QT_MOC_LITERAL(7, 72, 11) // "readCSVfile"
 
     },
     "SdInsCsvSource\0stateUpdate\0\0stateVector\0"
-    "info\0startUpdates\0stopUpdates\0readCSVfile"
+    "update\0startUpdates\0stopUpdates\0"
+    "readCSVfile"
 };
 #undef QT_MOC_LITERAL
 

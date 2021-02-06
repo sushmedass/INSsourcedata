@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_InsSourceData_t {
     QByteArrayData data[9];
-    char stringdata0[106];
+    char stringdata0[108];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,15 +36,15 @@ QT_MOC_LITERAL(0, 0, 13), // "InsSourceData"
 QT_MOC_LITERAL(1, 14, 11), // "stateUpdate"
 QT_MOC_LITERAL(2, 26, 0), // ""
 QT_MOC_LITERAL(3, 27, 11), // "stateVector"
-QT_MOC_LITERAL(4, 39, 4), // "info"
-QT_MOC_LITERAL(5, 44, 12), // "startUpdates"
-QT_MOC_LITERAL(6, 57, 11), // "stopUpdates"
-QT_MOC_LITERAL(7, 69, 14), // "updateInterval"
-QT_MOC_LITERAL(8, 84, 21) // "minimumUpdateInterval"
+QT_MOC_LITERAL(4, 39, 6), // "update"
+QT_MOC_LITERAL(5, 46, 12), // "startUpdates"
+QT_MOC_LITERAL(6, 59, 11), // "stopUpdates"
+QT_MOC_LITERAL(7, 71, 14), // "updateInterval"
+QT_MOC_LITERAL(8, 86, 21) // "minimumUpdateInterval"
 
     },
     "InsSourceData\0stateUpdate\0\0stateVector\0"
-    "info\0startUpdates\0stopUpdates\0"
+    "update\0startUpdates\0stopUpdates\0"
     "updateInterval\0minimumUpdateInterval"
 };
 #undef QT_MOC_LITERAL
